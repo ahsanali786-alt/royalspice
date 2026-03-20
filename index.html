@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Royal Spice Restaurant</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+nav {
+  background: #b22222;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092') no-repeat center/cover;
+  height: 90vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero h1 {
+  font-size: 50px;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin: 10px;
+  background: orange;
+  border: none;
+  cursor: pointer;
+}
+
+/* Section */
+section {
+  padding: 40px;
+  text-align: center;
+}
+
+/* Menu */
+.menu-item {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+
+/* Gallery */
+.gallery img {
+  width: 30%;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+/* Form */
+input, select {
+  padding: 10px;
+  margin: 10px;
+  width: 80%;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  padding: 20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+  <h2>Royal Spice</h2>
+  <div>
+    <a href="#menu">Menu</a>
+    <a href="#booking">Book</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<div class="hero">
+  <h1>Royal Spice Restaurant</h1>
+  <p>Delicious Food, Great Experience</p>
+  <button class="btn">Order Now</button>
+  <button class="btn">Book Table</button>
+</div>
+
+<!-- About -->
+<section>
+  <h2>About Us</h2>
+  <p>We serve delicious and high-quality food with a premium dining experience.</p>
+</section>
+
+<!-- Menu -->
+<section id="menu">
+<h2>Our Menu</h2>
+
+<div class="menu-item">Paneer Tikka - ₹180</div>
+<div class="menu-item">Chicken Tandoori - ₹250</div>
+<div class="menu-item">Veg Spring Roll - ₹120</div>
+<div class="menu-item">Chicken Lollipop - ₹200</div>
+
+<div class="menu-item">Butter Chicken - ₹300</div>
+<div class="menu-item">Paneer Butter Masala - ₹220</div>
+<div class="menu-item">Dal Makhani - ₹180</div>
+<div class="menu-item">Chicken Biryani - ₹250</div>
+
+<div class="menu-item">Tandoori Roti - ₹20</div>
+<div class="menu-item">Butter Naan - ₹40</div>
+
+<div class="menu-item">Burger - ₹100</div>
+<div class="menu-item">Pizza - ₹200</div>
+
+<div class="menu-item">Gulab Jamun - ₹80</div>
+<div class="menu-item">Ice Cream - ₹60</div>
+
+<div class="menu-item">Lassi - ₹70</div>
+<div class="menu-item">Cold Coffee - ₹90</div>
+
+</section>
+
+<!-- Gallery -->
+<section class="gallery">
+<h2>Gallery</h2>
+<img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5">
+<img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe">
+<img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836">
+</section>
+
+<!-- Booking -->
+<section id="booking">
+<h2>Book a Table</h2>
+<form onsubmit="bookTable(event)">
+<input type="text" placeholder="Your Name" required><br>
+<input type="date" required><br>
+<input type="time" required><br>
+<input type="number" placeholder="Number of People" required><br>
+<button class="btn">Submit</button>
+</form>
+</section>
+
+<!-- Reviews -->
+<section>
+<h2>Customer Reviews</h2>
+<p>⭐️⭐️⭐️⭐️⭐️ Amazing food!</p>
+<p>⭐️⭐️⭐️⭐️ Great service!</p>
+<p>⭐️⭐️⭐️⭐️⭐️ Loved the ambiance!</p>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+<h2>Contact Us</h2>
+<p>📍 Mithapur, Bihar</p>
+<p>📞 9876543210</p>
+<p>📧 royalspice@email.com</p>
+
+<iframe src="https://maps.google.com/maps?q=patna&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="100%" height="300"></iframe>
+</section>
+
+<!-- Footer -->
+<footer>
+<p>Opening Hours: 10 AM - 11 PM</p>
+<p>© 2026 Royal Spice Restaurant</p>
+</footer>
+
+<script>
+function bookTable(e){
+  e.preventDefault();
+  alert("Table Booked Successfully!");
+}
+</script>
+
+</body>
+</html>
